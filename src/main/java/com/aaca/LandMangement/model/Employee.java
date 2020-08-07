@@ -11,7 +11,7 @@ import java.util.Date;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long empId;
+    private int empId;
     @NotNull
     private String firsName ;
     @NotNull
@@ -25,7 +25,7 @@ public class Employee {
         return empId;
     }
 
-    public void setEmpId(long empId) {
+    public void setEmpId(int empId) {
         this.empId = empId;
     }
 

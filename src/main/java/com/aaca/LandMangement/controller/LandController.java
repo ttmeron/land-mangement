@@ -2,7 +2,9 @@ package com.aaca.LandMangement.controller;
 
 
 import com.aaca.LandMangement.model.Address;
+import com.aaca.LandMangement.model.Employee;
 import com.aaca.LandMangement.model.Land;
+import com.aaca.LandMangement.service.EmployeeService;
 import com.aaca.LandMangement.service.LandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -17,6 +19,27 @@ import java.util.List;
 public class LandController {
 @Autowired
     LandService landService;
+@Autowired
+EmployeeService employeeService;
+
+    @GetMapping("/employee")
+    public List<Employee> getEmployees(){
+        return employeeService.getAllEmployee();
+    }
+    @PostMapping("employees")
+    public Employee createEmployee(@Valid @RequestBody Employee employee) {
+        employeeService.createEmployee(employee);
+        System.out.println(employee.getFirsName());
+        System.out.println(employee.getLastName());
+        System.out.println(employee.getTitle());
+        System.out.println(employee.getHiredDate());
+        return employee;
+    }
+    @GetMapping("/employee/{empId}")
+    public Employee getEmployeeById (@PathVariable Long empId){
+        return employeeService.getEmployee(empId);
+
+    }
     @GetMapping("/lands")
 
     public List<Land> getLands() {
@@ -55,6 +78,7 @@ public class LandController {
         return landService.getLand(landId);
 
     }
+
 
 
 }
