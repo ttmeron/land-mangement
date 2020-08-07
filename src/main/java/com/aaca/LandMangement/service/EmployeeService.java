@@ -1,6 +1,6 @@
 package com.aaca.LandMangement.service;
 
-import com.aaca.LandMangement.model.Employee;
+import com.aaca.LandMangement.entities.Employee;
 
 import java.util.List;
 
