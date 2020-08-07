@@ -1,6 +1,6 @@
 package com.aaca.LandMangement.service;
 
-import com.aaca.LandMangement.model.Land;
+import com.aaca.LandMangement.entities.Land;
 
 import java.util.List;
 

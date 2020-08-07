@@ -1,6 +1,6 @@
 package com.aaca.LandMangement.repo;
 
-import com.aaca.LandMangement.model.Land;
+import com.aaca.LandMangement.entities.Land;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
