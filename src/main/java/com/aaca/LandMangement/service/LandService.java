@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface LandService {
     public List<Land> getAllLand();
-    public Land getLand(long landId);
+    public Land getLand(Long landId);
     public Land createLand(Land land);
 }

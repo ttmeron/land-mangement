@@ -13,16 +13,22 @@ public class EmployeeServiceImpl implements EmployeeService {
     EmployeeRepository employeeRepository;
 
     @Override
-    public Employee getEmployee(Long empId) {
+    public Employee getEmployee(Long empId)
+    {
+
         return employeeRepository.findById(empId).get();
     }
     @Override
     public Employee createEmployee(Employee employee){
+
         return employeeRepository.save(employee);
     }
     @Override
-    public List<Employee> getAllEmployee(){
+    public List<Employee> getAllEmployees(){
+
+
         return employeeRepository.findAll();
     }
+
 
 }

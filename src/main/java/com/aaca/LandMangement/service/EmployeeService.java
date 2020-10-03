@@ -5,9 +5,9 @@ import com.aaca.LandMangement.entities.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    public List<Employee> getAllEmployee();
+    public List<Employee> getAllEmployees();
 
-    Employee getEmployee(Long empId);
+    public Employee getEmployee(Long empId);
 
-    Employee createEmployee(Employee employee);
+    public Employee createEmployee(Employee employee);
 }
