@@ -17,6 +17,6 @@ public class Land {
     private int xCoordinate;
     private int YCoordinate;
     private String landType;
-    @OneToOne(cascade=CascadeType.ALL)
-    private Address address;
+//    @OneToOne(cascade=CascadeType.ALL)
+//    private Address address;
     }
