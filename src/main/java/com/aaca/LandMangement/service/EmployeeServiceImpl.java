@@ -3,6 +3,7 @@ package com.aaca.LandMangement.service;
 import com.aaca.LandMangement.entities.Employee;
 import com.aaca.LandMangement.repo.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

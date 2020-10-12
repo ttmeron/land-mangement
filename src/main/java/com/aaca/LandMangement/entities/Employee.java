@@ -1,5 +1,6 @@
 package com.aaca.LandMangement.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import java.util.Date;
 @NoArgsConstructor
 @ToString
 
+@JsonIgnoreProperties(ignoreUnknown=true)
 @Entity
 public class Employee {
     @Id

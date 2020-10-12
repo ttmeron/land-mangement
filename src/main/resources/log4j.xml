@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+        <?xml version="1.0" encoding="Big5" ?>
+<!--<?xml version="2.12.1" encoding="UTF-8"?>-->
+<!--<Configuration status="error">-->
+<!--    <Appenders>-->
+<!--        <Console name="stdout" target="SYSTEM_OUT">-->
+<!--            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+<!--        </Console>-->
+<!--    </Appenders>-->
+<!--    <Loggers>-->
+<!--        <Root level="error">-->
+<!--            <AppenderRef ref="stdout"/>-->
+<!--        </Root>-->
+<!--        <logger name="org.apache.kafka.clients" level="warn" additivity="false">-->
+<!--            <AppenderRef ref="stdout"/>-->
+<!--        </logger>-->
+<!--        <logger name="com.aaca.LandMangement" level="trace" additivity="false">-->
+<!--    </logger>-->
+<!--        <logger name="com.aaca.LandMangement.configration" level="trace" additivity="false">-->
+<!--        </logger>-->
+<!--    </Loggers>-->
+<!--</Configuration>--></html>

@@ -1,0 +1,1 @@
+C:\dev_tools\kafka>bin\windows\kafka-console-producer --broker-list localhost:9092 --topic land

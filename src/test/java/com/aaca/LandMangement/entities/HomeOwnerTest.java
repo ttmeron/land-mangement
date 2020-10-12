@@ -22,10 +22,10 @@ class HomeOwnerTest {
                       .map(s->s.toUpperCase())
                       .forEach(System.out::println);
 
-//        homeOwnerList1.sort((s1,s2)->s1.getFName().compareTo(s2.getFName()));
-//        homeOwnerList1.sort((s1,s2)-> s1.getLName().compareTo(s2.getLName()));
-//        homeOwnerList1.sort((s1,s2)-> Integer.compare(s1.getOwnerId(),s2.getOwnerId()));
-//        System.out.println(homeOwnerList1);
+        homeOwnerList1.sort((s1,s2)->s1.getFName().compareTo(s2.getFName()));
+        homeOwnerList1.sort((s1,s2)-> s1.getLName().compareTo(s2.getLName()));
+        homeOwnerList1.sort((s1,s2)-> Integer.compare(s1.getOwnerId(),s2.getOwnerId()));
+        System.out.println(homeOwnerList1);
 
     }
 
